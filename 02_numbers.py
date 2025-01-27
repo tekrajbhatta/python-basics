@@ -60,3 +60,27 @@ print(a > b and b < c)  # Comparison happens before logical AND
 print(a & b | c)  # Bitwise AND happens before Bitwise OR
 print()
 
+# Assignment1: Difference between `repr()`, `str()`, and `print()` functions
+# Example string
+text = "hello\nworld"
+
+# repr() - Developer-friendly, detailed representation
+dev_view = repr(text)  # Output: 'hello\\nworld'
+print(dev_view)  # 'hello\nworld'
+
+# str() - User-friendly, interpreted representation
+user_view = str(text)  # Output: hello
+                       #         world
+print(user_view)  # hello
+                  # world
+
+# print() - Displays the result of str() directly to the console
+print(text)  # Output: hello
+             #         world
+print()
+
+# Comments for clarity:
+# repr() -> Shows the raw representation(developer-friendly representation of an object, used for debugging or inpspecting the object) (e.g., escapes \n as \\n). 
+# str() -> Formats the object for users(Provides a readable, user-friendly representation of an object. Designed for display to users, without extra details.) (e.g., interprets \n as a new line).
+# print() -> Displays the output of str() (or whatever you pass to it) to the console. It’s not a function to process data but just shows the final output.
+
