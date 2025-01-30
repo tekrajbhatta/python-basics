@@ -208,4 +208,49 @@ print(setone - {1, 2, 3, 4})  # Output: set() (empty set)
 # Empty set vs. empty dict
 print(type({}))  # Output: <class 'dict'> (use set() for empty sets)
 empty_set = set()  # Correct way to create an empty set
+print()
 
+# ------------------------------
+# 7. Boolean Logic in Python
+# ------------------------------
+
+# 1. Boolean Basics
+# -----------------
+# Check the type of boolean values
+print(type(True))   # Output: <class 'bool'>
+print(type(False))  # Output: <class 'bool'>
+
+# 2. Boolean-Integer Relationship
+# --------------------------------
+# Boolean equivalence to integers
+print(True == 1)    # Output: True (True behaves like 1 in numeric contexts)
+print(False == 0)   # Output: True (False behaves like 0 in numeric contexts)
+
+# WARNING: Avoid using 'is' for value comparison
+# 'is' checks object identity, not value equivalence
+print(True is 1)    # Output: False (with a SyntaxWarning)
+# Python warns: "is" with 'int' literal. Did you mean "=="?
+
+# 3. Boolean Arithmetic
+# ---------------------
+# Booleans act as 1/0 in calculations
+print(True + 4)     # Output: 5 (True = 1 → 1 + 4 = 5)
+print(False * 10)   # Output: 0 (False = 0 → 0 * 10 = 0)
+
+# 4. Truthy/Falsy Checks
+# ----------------------
+# Empty collections are "falsy"
+empty_list = []
+print(bool(empty_list))  # Output: False
+
+# Non-empty collections are "truthy"
+non_empty_list = [1, 2, 3]
+print(bool(non_empty_list))  # Output: True
+
+# ------------------------------
+# Key Takeaways (Comment Notes)
+# ------------------------------
+# - Use `==` for value comparison, not `is` (except for `None` checks).
+# - `True` = 1 and `False` = 0 in arithmetic operations.
+# - Empty containers (lists, dicts, etc.) are falsy.
+# - Non-zero numbers and non-empty containers are truthy.
