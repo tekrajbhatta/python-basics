@@ -1,6 +1,6 @@
 # Python for Beginners Chai Aur Code
 
-Welcome to the Python Chai Aur Code repository! This repository contains code and projects I practiced while learning Python from the YouTube channel Chai Aur Code.
+Welcome to the Python Basics repository! This repository contains code and projects I practiced while learning Python from YouTube.
 
 ## Table of Contents
 
